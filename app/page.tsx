@@ -231,8 +231,11 @@ export default function PatientPage() {
         )}
 
         {/* スタッフ画面リンク */}
-        <div className="text-center mt-8">
-          <a href="/staff" className="text-sm text-gray-400 hover:text-gray-600 underline">
+        <div className="text-center mt-8 space-y-2">
+          <a href="/monitor" className="block text-sm text-gray-400 hover:text-gray-600 underline">
+            待合モニター画面
+          </a>
+          <a href="/staff" className="block text-sm text-gray-400 hover:text-gray-600 underline">
             スタッフ画面はこちら
           </a>
         </div>
