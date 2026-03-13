@@ -3,13 +3,13 @@ import { useEffect, useState, useCallback } from "react";
 import { supabase } from "../lib/supabase";
 
 export default function PatientPage() {
-  const [currentCalled, setCurrentCalled] = useState(null);
+  const [currentCalled, setCurrentCalled] = useState<number | null>(null);
   const [waitingCount, setWaitingCount] = useState(0);
-  const [myNumber, setMyNumber] = useState(null);
-  const [myStatus, setMyStatus] = useState(null);
-  const [waitingAhead, setWaitingAhead] = useState(null);
+  const [myNumber, setMyNumber] = useState<number | null>(null);
+  const [myStatus, setMyStatus] = useState<string | null>(null);
+  const [waitingAhead, setWaitingAhead] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   const today = new Date().toISOString().slice(0, 10);
 
